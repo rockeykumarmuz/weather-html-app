@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GtvnTeG0nHVR3UflXBX0nEB1qGur2mZgf0rfNc3P6Zxq+fN7EGqIujKlQ0p7gPdv"
+			crossorigin="anonymous" />
+		<link rel="stylesheet" href="./stylhttps://github.com/rockeykumarmuz/weather-html-app.gite.css" />
+		<title>weather-html-page</title>
+	</head>
+	<body>
+		<div id="container" class="container py-4">
+			<header id="weather-header" class="bg-default mb-4 rounded shadow-sm text-white">
+				<div class="container py-3">
+					<div class="row">
+						<div class="col-md-6 mb-3 mb-md-0">
+							<div class="logo">
+								<h1><span>Version</span> <span class="highlight">NeXt</span></h1>
+								<p class="logo-subtext">deliver innovative technologies</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<!-- Default data is shown here static but while load application an api calls made and data will be show dynamicallly -->
+							<div class="weather-info-wrapper">
+								<div class="weather-info">
+									<p id="location" class="country-name">FRANCE, CI</p>
+									<p id="temperature" class="temp-value">25.7°C</p>
+									<p id="description" class="weather-nature">Clouds</p>
+								</div>
+								<div class="weather-extra d-flex justify-content-between mt-3">
+									<div>
+										<p>HUMIDITY</p>
+										<h4 id="humidity">72%</h4>
+									</div>
+									<div class="divider d-none d-md-block"></div>
+									<div>
+										<p>WIND</p>
+										<h4 id="wind">3.86 K/M</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="search-section">
+				<div class="search-box d-flex flex-wrap gap-2 justify-content-center">
+					<input
+						type="text"
+						id="searchInput"
+						class="form-control flex-grow-1 flex-shrink-1"
+						placeholder="Search Location" />
+					<button id="searchBtn" class="btn btn-primary">
+						<img style="width: 24px" src="https://cdn-icons-png.flaticon.com/128/565/565949.png" alt="location-icon" />
+					</button>
+				</div>
+			</section>
+
+			<section class="cards">
+				<div class="city-card france" data-city="france">FRANCE</div>
+				<div class="city-card north-africa" data-city="north africa">NORTH AFRICA</div>
+				<div class="city-card qatar" data-city="qatar">QATAR</div>
+				<div class="city-card japan" data-city="japan">JAPAN</div>
+			</section>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
